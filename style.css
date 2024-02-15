@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover and Focus Styles */
+select:hover, button:hover,
+select:focus, button:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Day Styles */
+.day {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border-left: 5px solid transparent;
+    position: relative;
+}
+
+.day::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.day h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.schedule {
+    padding-left: 25px;
+}
+
+.schedule p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.holiday {
+    color: #666;
+    font-style: italic;
+}
+
+/* Highlighting for current day */
+.highlight-today {
+    background-color: #ffecb3;
+    border-left-color: #ffc107;
+    padding-left: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    select, button {
+        font-size: 14px;
+    }
+
+    .day h2 {
+        font-size: 18px;
+    }
+
+    .schedule p {
+        font-size: 14px;
+    }
+}
+
+footer{
+    
+    color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
